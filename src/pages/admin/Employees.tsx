@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import AdminLayout from "@/components/AdminLayout";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -23,6 +24,7 @@ import {
 } from "@/components/ui/table";
 
 const Employees = () => {
+  const navigate = useNavigate();
   const employees = [
     {
       id: 1,
@@ -107,7 +109,7 @@ const Employees = () => {
             <h1 className="text-3xl font-bold mb-2">Employees</h1>
             <p className="text-muted-foreground">Manage your team and employee information</p>
           </div>
-          <Button variant="hero" className="gap-2">
+          <Button variant="hero" className="gap-2" onClick={() => navigate("/admin/add-employee")}>
             <Plus className="w-4 h-4" />
             Add Employee
           </Button>

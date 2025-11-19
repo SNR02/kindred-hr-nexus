@@ -9,6 +9,8 @@ import Signup from "./pages/Signup";
 import Careers from "./pages/Careers";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import Employees from "./pages/admin/Employees";
+import AddEmployee from "./pages/admin/AddEmployee";
+import Teams from "./pages/admin/Teams";
 import Jobs from "./pages/admin/Jobs";
 import AdminLeaves from "./pages/admin/Leaves";
 import AdminHolidays from "./pages/admin/Holidays";
@@ -38,6 +40,8 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/employees" element={<Employees />} />
+          <Route path="/admin/add-employee" element={<AddEmployee />} />
+          <Route path="/admin/teams" element={<Teams />} />
           <Route path="/admin/jobs" element={<Jobs />} />
           <Route path="/admin/leaves" element={<AdminLeaves />} />
           <Route path="/admin/holidays" element={<AdminHolidays />} />
