@@ -9,6 +9,7 @@ import Signup from "./pages/Signup";
 import Careers from "./pages/Careers";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import Employees from "./pages/admin/Employees";
+import Jobs from "./pages/admin/Jobs";
 import AdminLeaves from "./pages/admin/Leaves";
 import AdminHolidays from "./pages/admin/Holidays";
 import AdminAttendance from "./pages/admin/Attendance";
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/careers" element={<Careers />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/employees" element={<Employees />} />
+          <Route path="/admin/jobs" element={<Jobs />} />
           <Route path="/admin/leaves" element={<AdminLeaves />} />
           <Route path="/admin/holidays" element={<AdminHolidays />} />
           <Route path="/admin/attendance" element={<AdminAttendance />} />

@@ -12,7 +12,8 @@ import {
   Bell,
   Search,
   LogOut,
-  Plus
+  Plus,
+  Briefcase
 } from "lucide-react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
@@ -26,6 +27,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
   const navigation = [
     { name: "Dashboard", href: "/admin/dashboard", icon: LayoutDashboard },
     { name: "Employees", href: "/admin/employees", icon: Users },
+    { name: "Jobs", href: "/admin/jobs", icon: Briefcase },
     { name: "Leaves", href: "/admin/leaves", icon: Calendar },
     { name: "Holidays", href: "/admin/holidays", icon: Calendar },
     { name: "Attendance", href: "/admin/attendance", icon: Clock },
